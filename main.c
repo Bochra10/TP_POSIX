@@ -37,10 +37,10 @@ void occuper_CD(int nMetro){
 }
 void occuper_BF(int nMetro){
     pthread_mutex_lock(&BF);
-    printf("Metro %d occupying FB\n",nMetro);
+    printf("Metro %d occupying BF\n",nMetro);
     occuper_segment();
     pthread_mutex_unlock(&BF);
-    printf("FA is available\n");
+    printf("BF is available\n");
 }
 void occuper_EC(int nMetro){
     pthread_mutex_lock(&EC);
