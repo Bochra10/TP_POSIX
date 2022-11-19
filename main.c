@@ -47,7 +47,7 @@ void occuper_EC(int nMetro){
     printf("Metro %d occupying EC\n",nMetro);
     occuper_segment();
     pthread_mutex_unlock(&EC);
-    printf("EB is available\n");
+    printf("EC is available\n");
 }
 
 void* ligne_MR1(void* arg){
